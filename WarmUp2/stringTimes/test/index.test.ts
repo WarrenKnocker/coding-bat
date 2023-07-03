@@ -14,17 +14,17 @@ describe("stringTimes",()=>{
 
  it("should provide 2 sets of 'Hi' if the second parameter is set to 2", ()=>{
     const result = stringTimes("Hi", 2);
-    assert(result, "HiHi")
+    assert.equal(result, "HiHi")
  });
 
  it("should provide 3 sets of 'Hi' if the second parameter is set to 3", ()=>{
     const result = stringTimes("Hi", 3);
-    assert(result, "HiHiHi")
+    assert.equal(result, "HiHiHi")
  });
 
  it("should provide 1 set of 'Hi' if the second parameter is set to 1", ()=>{
-    const result = stringTimes("Hi", 2);
-    assert(result, "Hi")
+    const result = stringTimes("Hi", 1);
+    assert.equal(result, "Hi")
  });
 
 
