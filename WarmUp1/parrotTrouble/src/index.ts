@@ -11,21 +11,23 @@ parrotTrouble(false, 6) → false
 
 */
 
-export function parrotTrouble(input1: boolean, input2: number): boolean { 
+export function parrotTrouble(isTalking: boolean, hourNum: number): boolean { 
   
-  switch (input1) {
+  switch (isTalking) {
      
-    case true:
-      if (input2 >= 7 && input2 <= 20) {
+    case true:{
+
+      if (hourNum >= 7 && hourNum <= 20) {
         return false;
       }
-      else { 
+      else {
         return true;
       }
-    
-    case false:
-      return false;
+    }
 
+    case false: {
+      return false;
+    }
   }
 
 }

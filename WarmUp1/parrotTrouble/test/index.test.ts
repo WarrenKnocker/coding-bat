@@ -17,17 +17,17 @@ import {parrotTrouble} from "../src/index";
 
 describe("ParrotTrouble", () => { 
 
-  it("Should display true if the time is within 7 to 20 otherwise false", () => {
+  it("should return true if the parrot is talking and the time less than 7", () => {
     const result = parrotTrouble(true, 6);
     assert.equal(result, true);
   });
 
-  it("Should display true if the time is within 7 to 20 otherwise false", () => {
+  it("should return false if the parrot is talking in the allowed perameter of 7 to 20hrs", () => {
     const result = parrotTrouble(true, 7);
     assert.equal(result, false)
   });
 
-  it("Should display true if the time is within 7 to 20 otherwise false", () => { 
+  it("Should return false if the parront is not talking", () => { 
     const result = parrotTrouble(false, 6);
     assert.equal(result, false);
   })
