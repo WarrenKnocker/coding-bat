@@ -38,9 +38,9 @@ export function posNeg(firstParameter: number, secondParameter: number, negParam
             }
         }
             
-        default: 
+        default: {
             return false
-
+        }
     }
 }
 

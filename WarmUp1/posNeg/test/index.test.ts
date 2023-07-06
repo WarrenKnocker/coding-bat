@@ -14,12 +14,12 @@ posNeg(-4, -5, true) → true
 
 describe("posNeg", () => { 
 
-    it("Should return ture if firstParameter is positive and second paramter is negative", () => { 
+    it("Should return ture if firstParameter is positive and secondparamter is negative", () => { 
         const result = posNeg(1, -1, false);
         assert.equal(result, true);
     })
 
-    it("Should return true if firstParameter is negative and Second Parameter is positive", () => { 
+    it("Should return true if firstParameter is negative and secondParameter is positive", () => { 
         const result = posNeg(-1, 1, false);
         assert.equal(result, true)
 
