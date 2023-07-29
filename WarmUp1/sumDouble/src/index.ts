@@ -1,10 +1,10 @@
-export function sumDouble(input1: number, input2: number): number {
+export function sumDouble(firstNum: number, secondNum: number): number {
   var result;
 
-  if (input1 == input2) {
-    result = (input1 + input2) * 2;
+  if (firstNum == secondNum) {
+    result = (firstNum + secondNum) * 2;
   } else {
-    result = input1 + input2;
+    result = firstNum + secondNum;
   }
 
   return result;
