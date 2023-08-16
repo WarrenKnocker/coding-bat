@@ -29,4 +29,9 @@ describe("front3", () => {
     const result = front3("abc");
     assert.equal(result, "abcabcabc");
   });
+
+  it("Should return 'aaa' when given 'a'. Testing a string less than 2 characters", () => {
+    const result = front3("a");
+    assert.equal(result, "aaa");
+  });
 });
