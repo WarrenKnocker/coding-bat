@@ -9,13 +9,11 @@ nearHundred(89) → false
 
 */
 
-export function nearHundred(unserInput: number): boolean {
-  unserInput = Math.abs(unserInput);
+export function nearHundred(testedInput: number): boolean {
+  testedInput = Math.abs(testedInput);
 
-  if (
-    (unserInput >= 90 && unserInput <= 110) ||
-    (unserInput >= 190 && unserInput <= 220)
-  ) {
-    return true;
-  } else return false;
+  return (
+    (testedInput >= 90 && testedInput <= 110) ||
+    (testedInput >= 190 && testedInput <= 220)
+  );
 }
