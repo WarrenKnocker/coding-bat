@@ -8,12 +8,8 @@ or35(8) → false
 
 */
 
-export function or35(NumParameter: number): boolean {
-  NumParameter = Math.abs(NumParameter);
+export function or35(testNumber: number): boolean {
+  testNumber = Math.abs(testNumber);
 
-  if (NumParameter % 3 == 0 || NumParameter % 5 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return testNumber % 3 == 0 || testNumber % 5 == 0;
 }
