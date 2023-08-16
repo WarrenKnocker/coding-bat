@@ -28,4 +28,9 @@ describe("backAround", () => {
     const result = backAround("a");
     assert.equal(result, "aaa");
   });
+
+  it("Should return '' if given no string parameter", () => {
+    const result = backAround("");
+    assert.equal(result, "");
+  });
 });

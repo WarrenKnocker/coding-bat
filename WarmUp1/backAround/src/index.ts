@@ -10,11 +10,13 @@ backAround("a") → "aaa"
 
 */
 
-export function backAround(strParameter: string): string {
-  let charArray: string[] = strParameter.split("");
-  let lastChar = charArray[strParameter.length - 1];
+export function backAround(testString: string): string {
+  if (testString == "") {
+    return testString;
+  } else {
+    let charArray: string[] = testString.split("");
+    let lastChar = charArray[testString.length - 1];
 
-  let newString = lastChar + strParameter + lastChar;
-
-  return newString;
+    return lastChar + testString + lastChar;
+  }
 }
