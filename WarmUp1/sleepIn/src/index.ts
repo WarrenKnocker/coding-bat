@@ -14,21 +14,5 @@ public boolean sleepIn(boolean weekday, boolean vacation)
 */
 
 export function sleepIn(weekday: boolean, vacation: boolean): boolean {
-
-if (weekday == false && vacation == false ) {
-    return true;
-}
-
-else if (weekday == false && vacation == false ) {
-    return true;
-}
-
-else if (weekday == false && vacation == true ) {
-  return true;
-}
-
-else {
-    return false;
-}
-
+  return (!weekday && !vacation) || (!weekday && vacation);
 }
