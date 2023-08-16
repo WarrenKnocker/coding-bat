@@ -12,10 +12,9 @@ front22("abc") → "ababcab"
 */
 
 export function front22(strParameter: string): string {
-  let charArray: string[] = strParameter.split("");
-  let TempChar = strParameter.slice(0, 2);
+  const TempChar = strParameter.slice(0, 2);
 
-  let newString = TempChar + strParameter + TempChar;
+  const result = TempChar + strParameter + TempChar;
 
-  return newString;
+  return result;
 }

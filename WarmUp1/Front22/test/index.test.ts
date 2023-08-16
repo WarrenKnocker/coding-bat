@@ -27,4 +27,9 @@ describe("Front22", () => {
     const result = front22("abc");
     assert.equal(result, "ababcab");
   });
+
+  it("Should use what ever character is given when string length is less than 2", () => {
+    const result = front22("a");
+    assert.equal(result, "aaa");
+  });
 });
