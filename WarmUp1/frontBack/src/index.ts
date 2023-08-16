@@ -7,17 +7,17 @@ frontBack("a") → "a"
 frontBack("ab") → "ba"
 */
 
-export function frontBack(strParameter: string): string {
-  let charArray: string[] = strParameter.split("");
+export function frontBack(testedString: string): string {
+  let charArray: string[] = testedString.split("");
 
   if (charArray.length < 1) {
-    return strParameter;
+    return testedString;
   } else {
     let charTemp = charArray[0];
     charArray[0] = charArray[charArray.length - 1];
     charArray[charArray.length - 1] = charTemp;
 
-    strParameter = charArray.join("");
-    return strParameter;
+    testedString = charArray.join("");
+    return testedString;
   }
 }
