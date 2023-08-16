@@ -9,14 +9,14 @@ diff21(21) → 0
 
 //public int diff21(int n)
 
-export function diff21(intParameter: number): number {
+export function diff21(testValue: number): number {
   var result;
 
-  if (intParameter < 21) {
-    result = 21 - intParameter;
+  if (testValue < 21) {
+    result = 21 - testValue;
     Math.abs(result);
   } else {
-    result = (21 - intParameter) * 2;
+    result = (21 - testValue) * 2;
     Math.abs(result);
   }
 
