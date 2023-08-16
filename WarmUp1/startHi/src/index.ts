@@ -9,11 +9,5 @@ startHi("hello hi") → false
 */
 
 export function startHi(strParameter: string): boolean {
-  let firstTwoChar = strParameter.slice(0, 2);
-
-  if (firstTwoChar == "hi") {
-    return true;
-  } else {
-    return false;
-  }
+  return strParameter.startsWith("hi");
 }
