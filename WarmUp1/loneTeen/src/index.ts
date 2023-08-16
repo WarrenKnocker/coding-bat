@@ -9,14 +9,8 @@ loneTeen(13, 13) → false
 */
 
 export function loneTeen(firstPerson: number, secondPerson: number): Boolean {
-  if (
-    firstPerson >= 13 &&
-    firstPerson <= 19 &&
-    secondPerson >= 13 &&
-    secondPerson <= 19
-  ) {
-    return false;
-  } else {
-    return true;
-  }
+  return (
+    (firstPerson >= 13 && firstPerson <= 19) !=
+    (secondPerson >= 13 && secondPerson <= 19)
+  );
 }
