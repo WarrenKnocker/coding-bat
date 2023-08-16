@@ -25,4 +25,9 @@ describe("hasTeen", () => {
     const result = hasTeen(20, 10, 13);
     assert.equal(result, true);
   });
+
+  it("Should return false of non of the numbers are in the range 13..19", () => {
+    const result = hasTeen(9, 8, 7);
+    assert.equal(result, false);
+  });
 });
